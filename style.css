@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #181818;
+    /* position: relative;
+    left: -8px; */
+    /* width: min-content; */
+    height: 2.5rem;
+    width: 100vw;
+    border-bottom: 1px solid #262626;
+}
+
+nav .logo {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img {
+    width: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 25rem;
+    gap: 1rem;
+    position: relative;
+    right: 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    /* padding: 0 2.5px 0 2.5px; */
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #cbcbcb;
+    padding: 0 4px 0 4px;
+    cursor: default;
+}
+
+nav ul a:hover {
+    /* border: 2px solid gray; */
+    border-radius: 5px;
+    /* padding: 0 2px 0 2px; */
+    background: gray;
+    color: white;
+
+}
+
+
+nav .main {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 3rem;
+}
+
+nav .main h4 {
+    color: #cbcbcb;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+nav .toggles {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.3rem;
+}
+
+
+nav .logo img {
+    width: 20px;
+}
+
+nav .options {
+    /* width: 17rem; */
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    padding-right: 1rem;
+}
+
+nav .options img {
+    width: 17px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper ul {
+    display: block;
+}
+
+.wrapper ul li {
+    list-style-type: none;
+}
+
+.wrapper ul li a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.sideNav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 2.5rem;
+    height: 96vh;
+    background: #181818;
+    position: fixed;
+    z-index: 999;
+    top: 2.5rem;
+    left: 0;
+    border-right: 1px solid #262626;
+    /* transition: 0.5s; */
+    /* overflow-x: hidden; */
+}
+
+.sideNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sideNav ul li {
+    transition: 0.2s;
+    padding-top: 0.3rem;
+}
+
+.sideNav ul li:hover {
+    border-left: 2px solid #3eaaf2;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.tabSpace {
+    position: fixed;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    background-color: #181818;
+    height: 2.5rem;
+    width: 100%;
+    border: 1px solid #262626;
+}
+
+.tabSpace ul {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: start;
+    gap: 1rem;
+}
+
+
+.tabSpace ul li {
+    list-style-type: none;
+    color: #cbcbcb;
+    display: flex;
+    gap: 1rem;
+}
+
+#codingField {
+    position: fixed;
+    background-color: #262626;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    padding: 1rem;
+    height: 92vh;
+    width: 97.3vw;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    resize: none;
+}
+
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+    nav {
+        height: 2rem;
+    }
+
+    nav .logo img {
+        width: 13px;
+    }
+
+    nav ul {
+        gap: 0.1rem;
+        right: 0;
+    }
+
+    nav ul li {
+        gap: 0;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    nav .main {
+        left: 2rem;
+    }
+
+    nav .main h4 {
+        font-size: 13px;
+    }
+
+    nav .toggles {
+        width: 19rem;
+        justify-content: center;
+        gap: 0;
+    }
+
+    nav .toggles img {
+        width: 1.2rem;
+    }
+
+    nav .options {
+        gap: 0.8rem;
+        width: 0;
+        margin-left: 1rem;
+    }
+
+    nav .options img {
+        width: 0.9rem;
+    }
+
+    .sideNav {
+        width: 2rem;
+        top: 2rem;
+    }
+
+    .sideNav ul {
+        gap: 0;
+    }
+
+    .sideNav ul li img {
+        width: 18px;
+    }
+
+    .tabSpace {
+        height: 2rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .tabSpace ul {
+        height: 2rem;
+    }
+    .tabSpace ul li {
+        gap: 0;
+        font-size: 14px;
+    }
+
+    #codingField {
+        margin-top: 4rem;
+        margin-left: 2rem;
+        font-size: 12px;
+    }
+}
